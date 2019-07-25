@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "dd14583d-2cdd-4a8a-bcc1-35b901c68cd8",
+		"name": "Meetup Node API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST remark",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"um teste\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/remarks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"remarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET remarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/remarks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"remarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT remark",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"um teste qwer\",\n    \"id\": \"d83dc126-e975-41ba-a723-f98a572a499b\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/remarks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"remarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET remark id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"um teste qwer\",\n    \"id\": \"d83dc126-e975-41ba-a723-f98a572a499b\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/remarks/d83dc126-e975-41ba-a723-f98a572a499b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"remarks",
+						"d83dc126-e975-41ba-a723-f98a572a499b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE remark id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/remarks/d83dc126-e975-41ba-a723-f98a572a499b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"remarks",
+						"d83dc126-e975-41ba-a723-f98a572a499b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Secret",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/secrets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secrets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Arquivo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/database",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"database"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Restricted Anonimo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/restricted/anon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restricted",
+						"anon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Restricted",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoie1widXNlclwiOlwiQW5vbmltb1wifSIsImlhdCI6MTU2NDAzOTYwNCwiZXhwIjoxNTY0MDQzMjA0fQ.FjgcP7y_GgRbgXor-j6UJhiBXLzfNZnF4XjL0Nqxyyw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/restricted",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restricted"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST validate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"usuario\",\n\t\"password\": \"senha\",\n\t\"birthyear\": \"1990\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Documentacao",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoie1widXNlclwiOlwiQW5vbmltb1wifSIsImlhdCI6MTU2NDAzOTQxNCwiZXhwIjoxNTY0MDQzMDE0fQ.artSl85_MgPKvpBYuXEwL_MV_HuN54r4gmwv4L5kDCw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
