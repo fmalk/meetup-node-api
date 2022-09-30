@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@hapi/joi": "^15.1.0",
+    "@hapi/joi": "^15.1.1",
     "bluebird": "^3.5.5",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
